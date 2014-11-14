@@ -12,11 +12,11 @@ db.movies.find({Rank : 8.9}).count()
 
 //##4. List all fields except _id for all movies that are NOT based on books (BOOK).
 
-db.shortliterature.find( { BOOK: { $exists: true}}, {_id: 0} )
+db.shortliterature.find( { BOOK: { $exists: false}}, {_id: 0} )
 
 //##5. Do the same query as 4. except print using printjson().
 
-db.shortliterature.find( { BOOK: { $exists: true}}, {_id: 0} ).forEach(printjson)
+db.shortliterature.find( { BOOK: { $exists: false}}, {_id: 0} ).forEach(printjson)
 
 //##6. For movies with ADPTs, list the author and title of the ADPTs in the literature collection.  Print with pretty(). 
 
