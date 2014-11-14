@@ -1,0 +1,21 @@
+sed 's/,//g' 260mv.csv | iconv -f utf-8 -t utf-8 -c > 260mv.temp
+awk '{ $1=$1","; $2=$2",";$3=$3",";  print }' 260mv.csv | head > 260mv_clean.csv
+tr -cd '\11\12\15\40-\176'
+
+
+
+sed 's/,//g' 260mv.csv | tr -cd '\11\12\15\40-\176' | awk '{ $1=$1","; $2=$2",";$3=$3",";  print }' > 260mv_clean.csv
+
+cp 260mv_clean.csv ~/Dropbox/2014\ Fall/CS\ 557/assignments/assignment\ 7/260mv_clean.csv 
+
+
+### mongodb command
+# create collection "movies" in db "users" (windows)
+C:\Users\kwang18>mongoimport --db users --collection movies --type csv --headerl
+ine --file "Dropbox\2014 Fall\CS 557\assignments\assignment 7\260mv_clean.csv"
+# mac version
+mongoimport --db users --collection movies --type csv --headerline --file ~/Dropbox/2014\ Fall/CS\ 557/assignments/assignment\ 7/data/260mv_clean.txt
+
+
+use users
+db.movies.find()

@@ -1,0 +1,140 @@
+#1
+{ "Distribution" : 223, "Votes" : 926908 }
+
+#2
+{ "Title" : "A Beautiful Mind (2001)" }
+{ "Title" : "Die Hard (1988)" }
+{ "Title" : "Donnie Darko (2001)" }
+{ "Title" : "Finding Nemo (2003)" }
+{ "Title" : "Good Will Hunting (1997)" }
+{ "Title" : "Gran Torino (2008)" }
+{ "Title" : "Jurassic Park (1993)" }
+{ "Title" : "Kill Bill: Vol. 1 (2003)" }
+{ "Title" : "Monsters Inc. (2001)" }
+{ "Title" : "No Country for Old Men (2007)" }
+{ "Title" : "Pirates of the Caribbean: The Curse of the Black Pearl (2003)" }
+{ "Title" : "Shutter Island (2010)" }
+{ "Title" : "Sin City (2005)" }
+{ "Title" : "Slumdog Millionaire (2008)" }
+{ "Title" : "The Avengers (2012)" }
+{ "Title" : "The Big Lebowski (1998)" }
+{ "Title" : "The Sixth Sense (1999)" }
+{ "Title" : "The Terminator (1984)" }
+{ "Title" : "The Truman Show (1998)" }
+{ "Title" : "The Wolf of Wall Street (2013)" }
+{ "Title" : "V for Vendetta (2005)" }
+
+#3
+6
+
+#4
+{ "MOVI" : "Jurassic Park (1993)", "BOOK" : { "Author" : "Shay, Don & Duncan, Jody.", "Title" : "The Making of Jurassic Park." }, "NOVL" : { "Author" : "Crichton, Michael.", "Title" : "Jurassic Park." } }
+{ "MOVI" : "Rear Window (1954)", "BOOK" : { "Author" : "Sharff, Stefan.", "Title" : "The Art of Looking." }, "NOVL" : { "Author" : "Woolrich, Cornell.", "Title" : "It Had to Be Murder." } }
+
+#5
+{
+	"MOVI" : "Jurassic Park (1993)",
+	"BOOK" : {
+		"Author" : "Shay, Don & Duncan, Jody.",
+		"Title" : "The Making of Jurassic Park."
+	},
+	"NOVL" : {
+		"Author" : "Crichton, Michael.",
+		"Title" : "Jurassic Park."
+	}
+}
+{
+	"MOVI" : "Rear Window (1954)",
+	"BOOK" : {
+		"Author" : "Sharff, Stefan.",
+		"Title" : "The Art of Looking."
+	},
+	"NOVL" : {
+		"Author" : "Woolrich, Cornell.",
+		"Title" : "It Had to Be Murder."
+	}
+}
+
+#6
+{
+	"ADPT" : {
+		"Author" : "Bruno, Anthony.",
+		"Title" : "Seven (Novelization of the screenplay by Andrew Kevin Walker)."
+	}
+}
+{
+	"ADPT" : {
+		"Author" : "Clarke, Arthur C..",
+		"Title" : "2001: A Space Odyssey."
+	}
+}
+{
+	"ADPT" : {
+		"Author" : "Lerangis, Peter.",
+		"Title" : "The Sixth Sense (Novelization of the screenplay by M. Night Shyamalan)."
+	}
+}
+
+#7
+{ "Rank" : 8 }
+{ "Rank" : 8.7 }
+{ "Rank" : 8 }
+{ "Rank" : 8.5 }
+{ "Rank" : 8.4 }
+
+#8
+{ "Title" : "Jurassic Park (1993)" }
+{ "Title" : "Rear Window (1954)" }
+
+#9
+// highest votes
+1305949
+
+// voting ratio. ONLY PART OF THE RESULTS
+[
+	{
+		"Voting Rate" : 0.25114610141743665
+	},
+	{
+		"Voting Rate" : 0.20380887768205344
+	},
+	{
+		"Voting Rate" : 0.2471321621288427
+	},
+	{
+		"Voting Rate" : 0.0966775884816329
+	},
+	{
+		"Voting Rate" : 0.048356405954597004
+	},
+	{
+		"Voting Rate" : 0.3374856139098847
+	},
+	{
+		"Voting Rate" : 0.07115362085349428
+	},
+	{
+		"Voting Rate" : 0.3257776528792472
+	},
+	{
+		"Voting Rate" : 0.33042791104399943
+	},
+	{
+		"Voting Rate" : 0.29627037502995907
+	},
+	{
+		"Voting Rate" : 0.05120720640698833
+	}
+]
+
+# Extra credit. Use MapReduce paradigm of MongoDB for joining tables. No denomalization. 
+{ "value" : { "Rank" : 8 } }
+{ "value" : { "Rank" : 8.7 } }
+{ "value" : { "Rank" : 8 } }
+{ "value" : { "Rank" : 8.5 } }
+{ "value" : { "Rank" : 8.4 } }
+
+
+
+
+
