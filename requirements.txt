@@ -1,0 +1,28 @@
+MongoDB Result Requirements
+
+For this assignment you are to create 2 different collections based on data from the  imdb database and query the collections using MongoDB.  You cannot just download the imdb data and put it into MongoDB.  As described below you will have to preprocess it so that you can put it into MongoDB.
+
+You should begin by installing MongoDB on a device of your choice: http://www.mongodb.org/downloads .  Read the documentation on getting started and experiment with the commands.  Next, create the following 2 collections and queries.
+
+The first collection will contain the movie ratings for 25,000+ movies.  You are to download the .gz file ratings.list from here.
+The data contains the fields:  Distribution, Votes, Rank and Title.  You are to create a file from ratings.list that contains the top 250 movies as well as the bottom 10 movies as a .csv file (so you will only have 260 movies, not 25,000).  Next, use the mongoimport command to load the data into the collection.  You need to get rid of any commas that appear in the titles for the csv file.  You may also have to get rid of any strange characters, eg. UTF8, as MongoDB cannot import them.
+
+Note:  you cannot issue the import command from inside of mongodb, but instead you issue the import command from the mongodb\bin directory.   The mongoimport command can also be used to import JSON files.
+
+The second collection is created from a data file that is based on the literature.list file from imdb.  This is a very large file, so we have created this smaller file that contains a subset of it with only 10 movies.  Your second collection should be created using the mongoDB insert() command.  This means you will have to create the JSON statements from the text file.  The documents in this data each contain different fields.  Each document does have a MOVI field (name of the movie).   The other fields contained in the original imdb datafile are: In, BOOK, NOVL, ADPT.   The variables BOOK, ADPT and NVL should each include two subfield indicating the author and title of the work.
+
+Once you have created all the documents in your collections you should run the following queries:
+
+1. List the number of votes and rank for the movie “The Matrix (1999)”.
+2. List the titles (only) of all movies with a rank of less than 8.3 and with at least 400,000 votes, print the titles in alphabetical order.
+3. Give the count of movies that have a rating of 8.9.
+4. List all fields except _id for all movies that are NOT based on books (BOOK).
+5. Do the same query as 4. except print using printjson().
+6. For movies with ADPTs, list the author and title of the ADPTs in the literature collection.  Print with pretty(). 
+7. List the ranking of the movies that are based on a novel (NOVL).  This is similar to a join operation in SQL. There are several ways to do this - as discussed in class you can DENORMALIZE the data.
+
+CS557
+
+8.  Specify the name of the movies that are based on more than one source (e.g. NOVL, BOOK, ADPT).
+9. Find the maximum number of votes, then divide each vote by the maximum number of votes.  Print the resulting values for each vote.
+Extra Credit:  Try to solve question 7 using another technique.
